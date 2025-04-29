@@ -43,7 +43,7 @@ public class Assicurazione {
 
         }
 
-        System.out.println(" ")
+        System.out.println(" ");
         //RICHIEDO GLI ANNI DI ESPERIENZA
         System.out.println("Quanti anni di esperienza hai?");
         int esperienza=scanner.nextInt();
