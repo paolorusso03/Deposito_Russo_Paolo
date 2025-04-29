@@ -16,7 +16,7 @@ public class Assicurazione {
         System.out.println("Digita 4 se hai un'età superiore a 50 anni");
         int età=scanner.nextInt();
 
-        //IN BASE ALLA SCELTA MODIFICO O MENO IL PIANO ASSICURATIVO
+        //IL PROGRAMMA PARTE SOLO SE IL NUMERO SELEZIONATO E' COMPRESO TRA 1 E 4
         if(età>=1&&età<=4){
         switch(età){
 
@@ -43,6 +43,7 @@ public class Assicurazione {
 
         }
 
+        System.out.println(" ")
         //RICHIEDO GLI ANNI DI ESPERIENZA
         System.out.println("Quanti anni di esperienza hai?");
         int esperienza=scanner.nextInt();
@@ -54,6 +55,7 @@ public class Assicurazione {
             System.out.println("Nessuna maggiorazione");
         }
 
+        System.out.println(" ");
         //RICHIEDO EVENTUALI INCIDENTI 
         System.out.println("Quanti incidenti hai avuto negli ultimi 5 anni?");
         int numeroIncidenti=scanner.nextInt();
@@ -82,10 +84,11 @@ public class Assicurazione {
             default:
             break;
         }
-
+        //SE IL NUMERO DI INCIDENTI E' MAGGIORE O UGUALE A 4, IL PROGRAMMA SI FERMA
         if(numeroIncidenti>=4){
             System.out.println("Non è possibile fare l'assicurazione!");
         }else{
+        System.out.println(" ");
         Scanner scanner2=new Scanner(System.in);
         System.out.println("Che piano assicurativo preferisci?");
         System.out.println("Scegli tra 'Default','Intermedio','Premium'");
